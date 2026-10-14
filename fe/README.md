@@ -1,7 +1,14 @@
 # Vue 3 + TypeScript + Vite
 
 Includes Tailwind CSS through the Vite plugin, ESLint for Vue and TypeScript,
-and Prettier for formatting. Tailwind utilities can be used directly in Vue templates.
+and Prettier for formatting. The starter page displays Hello and a clickable counter,
+with no custom styles or image assets. Tailwind is imported in `src/style.css`,
+so utility classes are ready to use.
+
+Vue Router is configured in `src/router/index.ts`, with the home page in
+`src/views/HomeView.vue`. Pinia is registered in `src/main.ts`; the starter counter
+uses `src/stores/counter.ts`. Production hosting should serve `index.html` for
+unmatched paths to support browser history routing.
 
 ```sh
 npm install
